@@ -1,2 +1,7 @@
 def distance(a, b):
-    return sum(1 if a[i] != b[i] else 0 for i in range(len(a)))
+    distance = 0
+    
+    for (ca, cb) in zip(a, b):
+        if ca != cb:
+            distance += 1
+    return distance
