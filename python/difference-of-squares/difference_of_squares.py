@@ -1,5 +1,5 @@
 def square_of_sum(num):
-    return sum([i for i in range(num + 1)]) ** 2
+    return sum(range(num + 1)) ** 2
 
 def sum_of_squares(num):
     return sum([i ** 2 for i in range(num + 1)])
