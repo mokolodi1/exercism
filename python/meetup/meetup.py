@@ -1,13 +1,8 @@
 from datetime import date, timedelta
+import calendar
 
 def meetup_day(year, month, week_day, occurrence):
-    days_of_week= ['Monday',
-                   'Tuesday',
-                   'Wednesday',
-                   'Thursday',
-                   'Friday',
-                   'Saturday',
-                   'Sunday']
+    days_of_week = list(calendar.day_name)
     occurrences = ['1st', '2nd', '3rd', '4th', 'last']
     the_day = date(year, month, 1)
 
